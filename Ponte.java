@@ -14,7 +14,7 @@ public class Ponte {
                wait();
            }
            disponivel=false;
-           System.out.println(categoria+" atravessando"+Thread.currentThread().getPriority());
+           System.out.println(categoria+" atravessando  ");
            for(int i=1;i<=10;i++){
                System.out.print(i+" ");
                Thread.sleep(10);
@@ -26,7 +26,7 @@ public class Ponte {
         catch(InterruptedException e){}
         
         finally{
-                System.out.println(categoria+" a seguir");
+                System.out.println(categoria+" passou");
                 disponivel=true;
                 }
     }  
